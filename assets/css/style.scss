@@ -1,0 +1,32 @@
+
+$background1:#ddd;
+$background2: rgb(127, 100, 200);
+
+@mixin squareSize {
+    width:200px;
+    height:200px;
+    margin:0 auto;
+    padding:50px;
+    border:2px solid #000;
+    box-shadow:2px 5px 5px #ddd;
+    text-align:center;
+    display:inline;
+    opacity:0;
+}
+
+.wrapper {
+    margin:50px auto;
+    text-align:center;
+    button {
+        border-radius: 5px;
+        background:$background2;
+        margin-bottom:50px;
+    }
+    .box {
+
+        @include squareSize;
+    }
+    #square {
+    }
+}
+
